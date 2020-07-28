@@ -1,6 +1,6 @@
 # chime-ice-breaker
 
-This serverless application periodically sends a random ice breaker question to the given Chime webhook URL based on the provided schedule.
+This serverless application periodically sends a random ice breaker question to the given Chime room webhook URL based on the provided schedule.
 
 This app was built for teams that are 100% remote, for example, due to COVID-19, and use Amazon Chime as their key team collaboration tool. While we've solved a lot of the barriers to getting work done while remote, there are fewer replacements for the informal human interactions that happen organically when physically sharing an office space. Things like small talk, jokes, and learning random things about one another.
 
@@ -12,7 +12,7 @@ This app is meant to help address this by periodically sending a random ice brea
 
 ### Chime Webhook URL
 
-To add create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room.
+To add create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room and select "Manage webhooks and bots".
 
 ![webhook setup 1](https://github.com/jlhood/chime-ice-breaker/raw/master/images/webhook-setup-1.png)
 
