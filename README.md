@@ -12,7 +12,7 @@ This app is meant to help address this by periodically sending a random ice brea
 
 ### Chime Webhook URL
 
-To add create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room and select "Manage webhooks and bots".
+To create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room and select "Manage webhooks and bots". Note, you must be an administrator of the Chime room to seet this option.
 
 ![webhook setup 1](https://github.com/jlhood/chime-ice-breaker/raw/master/images/webhook-setup-1.png)
 
