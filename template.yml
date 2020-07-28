@@ -4,7 +4,7 @@ Transform: AWS::Serverless-2016-10-31
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: chime-ice-breaker
-    Description: This serverless application periodically sends a random ice breaker question to the given Chime webhook.
+    Description: This serverless application periodically sends a random ice breaker question to the given Chime room webhook URL based on the provided schedule.
     Author: James Hood
     # SPDX License Id, e.g., MIT, MIT-0, Apache-2.0. See https://spdx.org/licenses for more details
     SpdxLicenseId: MIT
@@ -13,9 +13,9 @@ Metadata:
     Labels: [serverless, chime, ice-breaker, fun]
     HomePageUrl: https://github.com/jlhood/chime-ice-breaker
     # Update the semantic version and run sam publish to publish a new version of your app
-    SemanticVersion: 0.0.1
+    SemanticVersion: 1.0.0
     # best practice is to use git tags for each release and link to the version tag as your source code URL
-    SourceCodeUrl: https://github.com/jlhood/chime-ice-breaker/tree/0.0.1
+    SourceCodeUrl: https://github.com/jlhood/chime-ice-breaker/tree/1.0.0
 
 Parameters:
   ChimeUrl:
@@ -24,7 +24,7 @@ Parameters:
   ScheduleExpression:
     Type: String
     Description: An EventBridge schedule expression dictating the frequency at which ice-breaker questions will be sent (see https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html).
-    Default: 'cron(30 17 ? * MON-FRI *)'
+    Default: 'cron(30 18 ? * MON-FRI *)'
   LogLevel:
     Type: String
     Description: Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc
