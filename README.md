@@ -12,7 +12,7 @@ This app is meant to help address this by periodically sending a random ice brea
 
 ### Chime Webhook URL
 
-To create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room and select "Manage webhooks and bots". Note, you must be an administrator of the Chime room to seet this option.
+To create a Chime Webhook URL for your Chime room using the Chime client application, click on the gear icon in the upper right corner of your Chime room and select "Manage webhooks and bots". Note, you must be an administrator of the Chime room to set this option.
 
 ![webhook setup 1](https://github.com/jlhood/chime-ice-breaker/raw/master/images/webhook-setup-1.png)
 
@@ -37,7 +37,7 @@ You now have a new Chime webhook. Click the "Copy URL" link to copy the Chime we
 ## App Parameters
 
 1. `ChimeUrl` - Chime webhook URL to send the ice-breaker question to.
-1. `ScheduleExpression` - An EventBridge schedule expression dictating the frequency at which ice-breaker questions will be sent (see https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html). Default: cron(30 18 ? * MON-FRI *)
+1. `ScheduleExpression` - An EventBridge schedule expression dictating the frequency at which ice-breaker questions will be sent (see https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html). Default: `cron(30 18 ? * MON-FRI *)`
 1. `LogLevel` (optional) - Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc. Default: INFO
 
 ## License Summary
