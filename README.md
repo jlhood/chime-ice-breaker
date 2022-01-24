@@ -4,9 +4,15 @@ This serverless application periodically sends a random ice breaker question to 
 
 This app was built for teams that are 100% remote, for example, due to COVID-19, and use Amazon Chime or Slack as their key team collaboration tool. While we've solved a lot of the barriers to getting work done while remote, there are fewer replacements for the informal human interactions that happen organically when physically sharing an office space. Things like small talk, jokes, and learning random things about one another.
 
-This app is meant to help address this by periodically sending a random ice breaker question like this to your team Chime room:
+This app is meant to help address this by periodically sending a random ice breaker question like this to your team Chime or Slack room:
 
-![ice breaker question screenshot](https://github.com/jlhood/chime-ice-breaker/raw/master/images/example-screenshot.png)
+Chime example:
+
+![chime screenshot](https://github.com/jlhood/chime-ice-breaker/raw/master/images/example-chime-screenshot.png)
+
+Slack example:
+
+![slack screenshot](https://github.com/jlhood/chime-ice-breaker/raw/master/images/example-slack-screenshot.png)
 
 ## Installation Instructions
 
