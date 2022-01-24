@@ -4,13 +4,13 @@ Transform: AWS::Serverless-2016-10-31
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: chime-ice-breaker
-    Description: This serverless application periodically sends a random ice breaker question to the given Chime room webhook URL based on the provided schedule.
+    Description: This serverless application periodically sends a random ice breaker question to the given Chime or Slack webhook URL based on the provided schedule.
     Author: James Hood
     # SPDX License Id, e.g., MIT, MIT-0, Apache-2.0. See https://spdx.org/licenses for more details
     SpdxLicenseId: MIT
     LicenseUrl: LICENSE
     ReadmeUrl: README.md
-    Labels: [serverless, chime, ice-breaker, fun]
+    Labels: [serverless, chime, slack, ice-breaker, fun]
     HomePageUrl: https://github.com/jlhood/chime-ice-breaker
     # Update the semantic version and run sam publish to publish a new version of your app
     SemanticVersion: 1.0.0
@@ -20,7 +20,7 @@ Metadata:
 Parameters:
   ChimeUrl:
     Type: String
-    Description: Chime webhook URL to send the ice-breaker question to.
+    Description: Chime or Slack webhook URL to send the ice-breaker question to.
   ScheduleExpression:
     Type: String
     Description: An EventBridge schedule expression dictating the frequency at which ice-breaker questions will be sent (see https://docs.aws.amazon.com/eventbridge/latest/userguide/scheduled-events.html).
